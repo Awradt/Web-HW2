@@ -8,12 +8,12 @@
 
         <!--👇🏽 ابيكم تربطونلي هذي الصفحة بصفحة ال style.css -->
         
-           
+        <link rel="stylesheet" href="styles.css">
 
 
        <!--  👇🏽 اولا غيرولي عنوان الصفحه الى اسمكم *-->
 
-    <title>Document</title>
+    <title>Awrad almunayea</title>
     
     
       
@@ -22,18 +22,20 @@
            background-color: black;
            color: seashell;
            font-family: 'Courier New', Courier, monospace;
-           font-weight: bold;
-          }
+           font-weight: bold;}
           
 
        img{
-        
            height: 200px;
-           width: 200px;
-
-       }
-         
-
+           width: 200px;}
+           #img {border-radius: 50px;}
+            .p {border: 20px;
+              background-color: rgb(175, 230, 173);
+               padding: 30px;;
+              margin: 30px;
+              direction: rtl;}
+            .food {border-style: dotted;}      
+            .ol {list-style-type: upper-latin;}
 
      </style>
 
@@ -43,30 +45,44 @@
 <body>
 
     <!--  👇🏽  الى الصفحة h1 اضف عنوان   -->
-    
+    <h1>
+      my favorite food
+    </h1>
 
 
     
     <!-- 👇🏽   ul انشئ قائمة عشوائية بأكلاتك المفضلة  -->
-         
+        <ul class="food">
+          <li>strawberries</li>
+          <li>pasta</li>
+          <li>pizza</li>
+        </ul>
 
 
 
     <!-- 👇🏽  ol اكتب خطوات عمل اندومي ( اللي ما يعرف اندومي يحط خبز و جبن و اللي ما يعرف يكلمني خاص ☠ ) باستخدام قائمة مرقمة  -->
-   
-
-
+  <h2>
+    شلون ممكن تسوي اندومي ؟
+  </h2> 
+  <ol class="ol">
+    <li>جدر على الجولة و ماء ساخن</li>
+    <li>تحط الاندومي و الجياس الصغار و البهارات و اهم شي فلفل</li>
+    <li>تنطر خمس دقايق و اذا ميت يوع اربعه</li>
+    <li>جهزت صحنك ؟</li>
+  </ol>
 
     <!-- 👇🏽 id (#) غيروا إطار الصورة و خلوها دائرية باستخدام ال    -->
 
     
-  <img src="https://i.pinimg.com/564x/50/6c/79/506c79986234215741704cf657b16bc8.jpg" alt="">
+  <img src="https://i.pinimg.com/564x/50/6c/79/506c79986234215741704cf657b16bc8.jpg" alt="error" id="img">
 
 
   <!-- 👇🏽 margin, padding , background-color, border :لتعديل  class  و اضف له الفقرة التي في الاسفل ثم اضف div قم بإنشاء   -->
-
-
+<div class="p">
   <p> CSS helps Web developers create a uniform look across several pages of a Web site. Instead of defining the style of each table and each block of text within a page's HTML, commonly used styles need to be defined only once in a CSS document. Once the style is defined in cascading style sheet, it can be used by any page that references the CSS file. Plus, CSS makes it easy to change styles across several pages at once. For example, a Web developer may want to increase the default text size from 10pt to 12pt for fifty pages of a Web site. If the pages all reference the same style sheet, the text size only needs to be changed on the style sheet and all the pages will show the larger text.</p>
+</div>
+
+  
 
 </body>  
 </html>
